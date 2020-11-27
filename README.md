@@ -16,3 +16,16 @@ Features:
   * Even when opted in to closed by default 
   * Even when JavaScript fails
   * Even when JavaScript succeeds but runs after render
+
+## Installation
+
+1. Inline `herald-helper.js` into your `<head>`
+2. Add `herald.css` and `herald.js` to your build CSS and JS.
+3. Add the markup:
+
+```html
+<announcement-banner class="demo-banner">
+  <a href="YOUR_URL">YOUR_TEXT</a>
+  <button type="button" data-banner-close class="demo-banner-close">Close</button>
+</announcement-banner>
+```
