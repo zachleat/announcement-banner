@@ -3,6 +3,7 @@
 A reusable announcement bar banner component.
 
 * [Demo](https://zachleat.github.io/herald-of-the-dog/demo.html)
+* Read more at [_Ruthlessly Eliminating Layout Shift on Netlify.com_](https://www.zachleat.com/web/layout-shift/)
 
 Features:
 
