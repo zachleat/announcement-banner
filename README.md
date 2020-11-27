@@ -9,7 +9,7 @@ Features:
 
 * Hyperlink to a thing.
 * Limited visual style (bring your own theme)
-* No JavaScript requirement.
+* JavaScript not required.
 * Close preference saved to local storage for future page loads
 * Frameworkless: Web component
 * No CLS (cumulative layout shift):
