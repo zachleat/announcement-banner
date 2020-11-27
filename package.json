@@ -1,0 +1,25 @@
+{
+  "name": "herald-of-the-dog",
+  "version": "1.0.0",
+  "description": "A reusable announcement bar banner component.",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachleat/herald-of-the-dog.git"
+  },
+  "keywords": [
+    "announcement",
+    "banner",
+    "web component"
+  ],
+  "author": {
+    "name": "Zach Leatherman",
+    "email": "zachleatherman@gmail.com",
+    "url": "https://zachleat.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zachleat/herald-of-the-dog/issues"
+  },
+  "homepage": "https://github.com/zachleat/herald-of-the-dog#readme"
+}
