@@ -19,7 +19,20 @@ Features:
 
 ## Installation
 
-1. Inline `herald-helper.js` into your `<head>`
+1. Inline helper script into your `<head>`
+
+```js
+// Inline this into your <head>
+
+// The current banner CTA URL, we inject this from a JSON data file
+let ctaUrl = "https://www.netlify.com/sustainability/";
+let savedCtaUrl = localStorage.getItem("banner--cta-url");
+
+if(savedCtaUrl === ctaUrl) {
+  document.documentElement.classList.add("banner--hide");
+}
+```
+
 2. Add `herald.css` and `herald.js` to your build CSS and JS.
 3. Add the markup:
 
