@@ -20,16 +20,12 @@
 			display: flex;
 			justify-content: space-between;
 			background: linear-gradient(-72deg, #444, #222);
+			font-size: 0.875em; /* 14px /16 */
 			/* Please don’t use position: absolute or sticky */
 		}
 		.demo-banner a[href] {
 			display: block;
-			padding: .5em;
-		}
-		@media (min-width: 37.5em) { /* 600px */
-			.demo-banner a[href] {
-				padding: .75em 1em;
-			}
+			padding: 0.7142857142857em; /* 10px /14 */
 		}
 		.demo-banner,
 		.demo-banner :link,
@@ -37,12 +33,16 @@
 			color: #fff;
 		}
 		.demo-banner-close {
-			appearance: none;
-			-webkit-appearance: none;
 			background-color: rgba(0,0,0,.3);
 			border: none;
 			color: inherit;
-			font-size: 0.6875em; /* 11px /16 */
+			font-size: inherit;
+		}
+
+		@media (min-width: 37.5em) { /* 600px */
+			.demo-banner {
+				font-size: 1em; /* 16px /16 */
+			}
 		}
 		</style>
 		<script>
