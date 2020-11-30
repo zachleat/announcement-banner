@@ -19,7 +19,8 @@ Features:
 
 ## Installation
 
-1. Inline helper script into your `<head>`
+1. Install from [npm](https://www.npmjs.com/package/herald-of-the-dog): `npm install herald-of-the-dog --save`
+2. Inline helper script into your `<head>`
 
 ```js
 // Inline this into your <head>
@@ -33,8 +34,8 @@ if(savedCtaUrl === ctaUrl) {
 }
 ```
 
-2. Add `herald.css` and `herald.js` to your build CSS and JS.
-3. Add the markup:
+3. Add `herald.css` and `herald.js` to your build CSS and JS.
+4. Add the markup:
 
 ```html
 <announcement-banner class="demo-banner">
