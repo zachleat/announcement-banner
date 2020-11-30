@@ -1,6 +1,6 @@
 # herald-of-the-dog
 
-A reusable announcement bar banner component.
+A reusable announcement bar banner component. If you don’t need a _Hide_ or _Close_ button on the banner, you don’t need this (just use CSS)!
 
 * [Demo](https://zachleat.github.io/herald-of-the-dog/demo.html)
 * Read more at [_Ruthlessly Eliminating Layout Shift on Netlify.com_](https://www.zachleat.com/web/layout-shift/)
