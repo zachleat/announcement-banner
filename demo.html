@@ -47,10 +47,10 @@
 		</style>
 		<script>
 		// the current banner CTA URL, we inject this from a JSON data file
-		let ctaUrl = "https://www.netlify.com/sustainability/";
-		let savedCtaUrl = localStorage.getItem("banner--cta-url");
+		let currentKey = "https://www.netlify.com/sustainability/";
+		let storageKey = localStorage.getItem("banner--cta-url");
 
-		if(savedCtaUrl === ctaUrl) {
+		if(storageKey === currentKey) {
 			document.documentElement.classList.add("banner--hide");
 		}
 		</script>

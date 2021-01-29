@@ -19,10 +19,16 @@ class Banner extends HTMLElement {
   }
 
   savePreference() {
-    let cta = this.querySelector("a[href]");
-    if(cta) {
-      let ctaUrl = cta.getAttribute("href");
-      localStorage.setItem("banner--cta-url", ctaUrl);
+    let storageKey = this.getAttribute("data-banner-key");
+    if(!storageKey) {
+      let cta = this.querySelector("a[href]");
+      if(cta) {
+        storageKey = cta.getAttribute("href");
+      }
+    }
+
+    if(storageKey) {
+      localStorage.setItem("banner--cta-url", storageKey);
     }
   }
 

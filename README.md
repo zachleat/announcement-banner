@@ -16,6 +16,7 @@ Features:
   * Even when opted in to closed by default 
   * Even when JavaScript fails
   * Even when JavaScript succeeds but runs after render
+* Use `data-banner-key` to set your own storage key for comparison (overrides the first link URL). (available in 1.0.3+)
 
 ## Installation
 
@@ -26,10 +27,10 @@ Features:
 // Inline this into your <head>
 
 // The current banner CTA URL, we inject this from a JSON data file
-let ctaUrl = "https://www.netlify.com/sustainability/";
-let savedCtaUrl = localStorage.getItem("banner--cta-url");
+let key = "https://www.netlify.com/sustainability/";
+let savedKey = localStorage.getItem("banner--cta-url");
 
-if(savedCtaUrl === ctaUrl) {
+if(savedKey === key) {
   document.documentElement.classList.add("banner--hide");
 }
 ```
