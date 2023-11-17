@@ -2,7 +2,9 @@
   "name": "herald-of-the-dog",
   "version": "1.0.3",
   "description": "A reusable announcement bar banner component.",
-  "scripts": {},
+  "scripts": {
+    "start": "npx http-server ."
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zachleat/herald-of-the-dog.git"

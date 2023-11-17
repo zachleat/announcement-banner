@@ -2,11 +2,14 @@
 announcement-banner[hidden] {
   display: none;
 }
-[data-banner-close] {
+announcement-banner [data-banner-close] {
   opacity: 0;
   pointer-events: none;
 }
-.banner--show-close [data-banner-close] {
+/* The close button will not be visible until the component is defined,
+ * preventing ghost clicks on the button before the event listener is added.
+ */
+announcement-banner:defined [data-banner-close] {
   opacity: 1;
   pointer-events: auto;
 }

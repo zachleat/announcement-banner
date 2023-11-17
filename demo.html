@@ -19,7 +19,7 @@
 		.demo-banner {
 			display: flex;
 			justify-content: space-between;
-			background: linear-gradient(-72deg, #444, #222);
+			background: #222 linear-gradient(-72deg, #555, #222);
 			font-size: 0.875em; /* 14px /16 */
 			/* Please don’t use position: absolute or sticky */
 		}
@@ -33,7 +33,7 @@
 			color: #fff;
 		}
 		.demo-banner-close {
-			background-color: rgba(0,0,0,.3);
+			background-color: transparent;
 			border: none;
 			color: inherit;
 			font-size: inherit;
@@ -47,21 +47,23 @@
 		</style>
 		<script>
 		// the current banner CTA URL, we inject this from a JSON data file
-		let currentKey = "https://www.netlify.com/sustainability/";
-		let storageKey = localStorage.getItem("banner--cta-url");
+		let currentKey = "https://www.zachleat.com/";
+		// sessionStorage with save-type="session"
+		// localStorage with no save-type
+		let storageKey = sessionStorage.getItem("banner--cta-url");
 
 		if(storageKey === currentKey) {
 			document.documentElement.classList.add("banner--hide");
 		}
 		</script>
+		<script type="module" src="herald.js"></script>
 	</head>
 	<body>
-		<announcement-banner class="demo-banner">
-			<a href="https://www.netlify.com/sustainability/">Read about our Sustainability. Read about our Sustainability. Read about our Sustainability. Read about our Sustainability. Read about our Sustainability.</a>
-			<button type="button" data-banner-close class="demo-banner-close">Close</button>
+		<announcement-banner class="demo-banner" save-type="session">
+			<a href="https://www.zachleat.com/">Read about our Sustainability. Read about our Sustainability. Read about our Sustainability. Read about our Sustainability. Read about our Sustainability.</a>
+			<button type="button" data-banner-close class="demo-banner-close">❌ Close</button>
 		</announcement-banner>
 
 		<p>This is some other content.</p>
-		<script type="module" src="herald.js"></script>
 	</body>
 </html>
