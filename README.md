@@ -47,4 +47,4 @@ if(savedKey === key) {
 
 ## Changelog
 
-* `v1.0.6` npm package name changed from `herald-of-the-dog` to `@zachleat/announcement-banner`
+* npm package name changed from `herald-of-the-dog` to `@zachleat/announcement-banner`

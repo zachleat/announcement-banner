@@ -1,6 +1,6 @@
 {
   "name": "@zachleat/announcement-banner",
-  "version": "1.0.6",
+  "version": "1.0.0",
   "description": "A reusable announcement bar banner component.",
   "scripts": {
     "start": "npx http-server ."
