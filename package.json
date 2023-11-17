@@ -1,6 +1,6 @@
 {
   "name": "herald-of-the-dog",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A reusable announcement bar banner component.",
   "scripts": {
     "start": "npx http-server ."
