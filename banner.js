@@ -1,4 +1,6 @@
 class Banner extends HTMLElement {
+  static storageKey = "banner--cta-url";
+
   connectedCallback() {
     let button = this.querySelector("[data-banner-close]");
     if(button) {
@@ -10,16 +12,16 @@ class Banner extends HTMLElement {
   }
 
   savePreference() {
-    let storageKey = this.getAttribute("key") || this.getAttribute("data-banner-key");
-    if(!storageKey) {
+    let storageValue = this.getAttribute("key") || this.getAttribute("data-banner-key");
+    if(!storageValue) {
       let cta = this.querySelector("a[href]");
       if(cta) {
-        storageKey = cta.getAttribute("href");
+        storageValue = cta.getAttribute("href");
       }
     }
 
     let saveType = this.getAttribute("save-type");
-    if(storageKey) {
+    if(storageValue) {
       let store;
       if(saveType === "session") {
         store = sessionStorage;
@@ -27,7 +29,7 @@ class Banner extends HTMLElement {
         store = localStorage;
       }
 
-      store.setItem("banner--cta-url", storageKey);
+      store.setItem(Banner.storageKey, storageValue);
     }
   }
 

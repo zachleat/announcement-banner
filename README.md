@@ -1,6 +1,6 @@
 # announcement-banner
 
-A reusable announcement bar banner component. If you don’t need a _Hide_ or _Close_ button on the banner, you don’t need this (just use CSS)!
+A reusable announcement bar banner component. If you don’t need a _Hide_ or _Close_ button on the banner (and to save the user preference), you don’t need this (just use CSS)!
 
 * [Demo](https://zachleat.github.io/announcement-banner/demo.html)
 * Read more at [_Ruthlessly Eliminating Layout Shift on Netlify.com_](https://www.zachleat.com/web/layout-shift/)
@@ -26,25 +26,26 @@ Features:
 ```js
 // Inline this into your <head>
 
-// The current banner CTA URL, we inject this from a JSON data file
-let key = "https://www.zachleat.com/";
+// The current banner CTA URL
+let latestBannerUrl = "YOUR_URL";
 let savedKey = localStorage.getItem("banner--cta-url");
 
-if(savedKey === key) {
+// Hide if the banner URL is the same as the saved preference banner URL
+if(savedKey === latestBannerUrl) {
   document.documentElement.classList.add("banner--hide");
 }
 ```
 
-3. Add `announcement-banner.css` and `announcement-banner.js` to your build CSS and JS.
+3. Add `banner.css` and `banner.js` to your build CSS and JS.
 4. Add the markup:
 
 ```html
-<announcement-banner class="demo-banner">
+<announcement-banner>
   <a href="YOUR_URL">YOUR_TEXT</a>
-  <button type="button" data-banner-close class="demo-banner-close">Close</button>
+  <button type="button" data-banner-close>Close</button>
 </announcement-banner>
 ```
 
 ## Changelog
 
-* npm package name changed from `herald-of-the-dog` to `@zachleat/announcement-banner`
+* `v1.0.6` npm package name changed from `herald-of-the-dog` to `@zachleat/announcement-banner`
