@@ -5,6 +5,9 @@
   "scripts": {
     "start": "npx http-server ."
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zachleat/announcement-banner.git"
