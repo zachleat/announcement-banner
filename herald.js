@@ -10,7 +10,7 @@ class Banner extends HTMLElement {
   }
 
   savePreference() {
-    let storageKey = this.getAttribute("data-banner-key");
+    let storageKey = this.getAttribute("key") || this.getAttribute("data-banner-key");
     if(!storageKey) {
       let cta = this.querySelector("a[href]");
       if(cta) {

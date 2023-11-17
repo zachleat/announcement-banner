@@ -13,10 +13,10 @@ Features:
 * Close preference saved to local storage for future page loads
 * Frameworkless: Web component
 * No CLS (cumulative layout shift):
-  * Even when opted in to closed by default 
+  * Even when opted in to closed by default
   * Even when JavaScript fails
   * Even when JavaScript succeeds but runs after render
-* Use `data-banner-key` to set your own storage key for comparison (overrides the first link URL). (available in 1.0.3+)
+* Use the `key` attribute (v1.0.5+) (or backwards compatible with `data-banner-key` 1.0.3+) to set your own storage key for comparison (defaults to the first link URL).
 
 ## Installation
 
