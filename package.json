@@ -1,13 +1,13 @@
 {
-  "name": "herald-of-the-dog",
-  "version": "1.0.5",
+  "name": "@zachleat/announcement-banner",
+  "version": "1.0.6",
   "description": "A reusable announcement bar banner component.",
   "scripts": {
     "start": "npx http-server ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zachleat/herald-of-the-dog.git"
+    "url": "git+https://github.com/zachleat/announcement-banner.git"
   },
   "keywords": [
     "announcement",
@@ -21,7 +21,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zachleat/herald-of-the-dog/issues"
+    "url": "https://github.com/zachleat/announcement-banner/issues"
   },
-  "homepage": "https://github.com/zachleat/herald-of-the-dog#readme"
+  "homepage": "https://github.com/zachleat/announcement-banner#readme"
 }

@@ -1,8 +1,8 @@
-# herald-of-the-dog
+# announcement-banner
 
 A reusable announcement bar banner component. If you don’t need a _Hide_ or _Close_ button on the banner, you don’t need this (just use CSS)!
 
-* [Demo](https://zachleat.github.io/herald-of-the-dog/demo.html)
+* [Demo](https://zachleat.github.io/announcement-banner/demo.html)
 * Read more at [_Ruthlessly Eliminating Layout Shift on Netlify.com_](https://www.zachleat.com/web/layout-shift/)
 
 Features:
@@ -20,14 +20,14 @@ Features:
 
 ## Installation
 
-1. Install from [npm](https://www.npmjs.com/package/herald-of-the-dog): `npm install herald-of-the-dog --save`
+1. Install from [npm](https://www.npmjs.com/package/@zachleat/announcement-banner): `npm install @zachleat/announcement-banner --save`
 2. Inline helper script into your `<head>`
 
 ```js
 // Inline this into your <head>
 
 // The current banner CTA URL, we inject this from a JSON data file
-let key = "https://www.netlify.com/sustainability/";
+let key = "https://www.zachleat.com/";
 let savedKey = localStorage.getItem("banner--cta-url");
 
 if(savedKey === key) {
@@ -35,7 +35,7 @@ if(savedKey === key) {
 }
 ```
 
-3. Add `herald.css` and `herald.js` to your build CSS and JS.
+3. Add `announcement-banner.css` and `announcement-banner.js` to your build CSS and JS.
 4. Add the markup:
 
 ```html
@@ -44,3 +44,7 @@ if(savedKey === key) {
   <button type="button" data-banner-close class="demo-banner-close">Close</button>
 </announcement-banner>
 ```
+
+## Changelog
+
+* `v1.0.6` npm package name changed from `herald-of-the-dog` to `@zachleat/announcement-banner`
