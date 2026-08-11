@@ -2,6 +2,7 @@
   "name": "@zachleat/announcement-banner",
   "version": "1.0.8",
   "description": "A reusable announcement bar banner component.",
+  "main": "banner.js",
   "scripts": {
     "start": "npx http-server ."
   },
