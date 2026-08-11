@@ -1,6 +1,6 @@
 {
   "name": "@zachleat/announcement-banner",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A reusable announcement bar banner component.",
   "main": "banner.js",
   "scripts": {
